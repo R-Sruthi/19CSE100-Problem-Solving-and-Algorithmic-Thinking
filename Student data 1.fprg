@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="S.RAMESH"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-28 10:09:08 AM"/>
+        <attribute name="created" value="Uy5SQU1FU0g7REVTS1RPUC1ISlBPMTBLOzIwMjItMTAtMjg7MDk6MjY6MTkgQU07MjkxMA=="/>
+        <attribute name="edited" value="Uy5SQU1FU0g7REVTS1RPUC1ISlBPMTBLOzIwMjItMTAtMjg7MTA6MDk6MDggQU07MjszMDEw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Roll" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the roll no&quot;" newline="True"/>
+            <input variable="Roll"/>
+            <declare name="Name" type="String" array="False" size=""/>
+            <output expression="&quot;Enter your Name&quot;" newline="True"/>
+            <input variable="Name"/>
+            <declare name="BloodGr" type="String" array="False" size=""/>
+            <output expression="&quot;Enter your Blood Group&quot;" newline="True"/>
+            <input variable="BloodGr"/>
+            <declare name="Address" type="String" array="False" size=""/>
+            <output expression="&quot;Enter The Address&quot;" newline="True"/>
+            <input variable="Address"/>
+            <declare name="PhNo" type="String" array="False" size=""/>
+            <output expression="&quot;Enter the address&quot;" newline="True"/>
+            <input variable="PhNo"/>
+            <declare name="Dept" type="String" array="False" size=""/>
+            <output expression="&quot;Enter your dept&quot;" newline="True"/>
+            <input variable="Dept"/>
+            <output expression="&quot;name&quot;&amp;Name&amp;&#13;&#10;&quot;rollno&quot;&amp;Roll&amp;&#13;&#10;&quot;blood grup&quot;&amp;BloodGr&amp;&#13;&#10;&quot;Address&quot;&amp;Address&amp;&#13;&#10;&quot;ph no&quot;&amp;PhNo&amp;&#13;&#10;&quot;dept assined&quot;&amp;Dept" newline="False"/>
+            <output expression="&quot; &quot;" newline="True"/>
+            <declare name="sem" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter sem&quot;" newline="True"/>
+            <input variable="sem"/>
+            <declare name="subc1" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter subc1&quot;" newline="True"/>
+            <input variable="subc1"/>
+            <declare name="subc2" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter subc2&quot;" newline="True"/>
+            <input variable="subc2"/>
+            <declare name="mark1" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter mark1&quot;" newline="True"/>
+            <input variable="mark1"/>
+            <declare name="mark2" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter mark2&quot;" newline="True"/>
+            <input variable="mark2"/>
+            <declare name="tot" type="Integer" array="False" size=""/>
+            <assign variable="tot" expression="mark1+mark2"/>
+            <declare name="avg" type="Real" array="False" size=""/>
+            <assign variable="avg" expression="(mark1+mark2)/2"/>
+            <output expression="tot" newline="True"/>
+            <output expression="avg" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
