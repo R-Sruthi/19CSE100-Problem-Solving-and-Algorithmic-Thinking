@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22051"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 11:03:06 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA1MTsyMDIyMjNNQVlDMDA4ODsyMDIyLTExLTA0OzA5OjUyOjIxIEFNOzMwNjM="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA1MTsyMDIyMjNNQVlDMDA4ODsyMDIyLTExLTA0OzExOjAzOjA2IEFNOzg7MzE3MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="&quot;PROGRAM FOR SWAPPING 2 NOS&quot;"/>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter variable a&quot;" newline="True"/>
+            <comment text="taking input of a "/>
+            <input variable="a"/>
+            <declare name="b" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter variable b&quot;" newline="True"/>
+            <comment text="taking input of b"/>
+            <input variable="b"/>
+            <assign variable="a" expression="a+b"/>
+            <assign variable="b" expression="a-b"/>
+            <assign variable="a" expression="a-b"/>
+            <output expression="&quot;a=&quot;" newline="True"/>
+            <output expression="a" newline="True"/>
+            <output expression="&quot;b=&quot;" newline="True"/>
+            <output expression="b" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

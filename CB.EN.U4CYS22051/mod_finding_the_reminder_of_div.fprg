@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22051"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 11:04:21 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA1MTsyMDIyMjNNQVlDMDA4ODsyMDIyLTExLTA0OzEwOjA2OjEwIEFNOzMwNTI="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA1MTsyMDIyMjNNQVlDMDA4ODsyMDIyLTExLTA0OzExOjA0OjIxIEFNOzM7MzE2Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Program to find the mod "/>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter thre value of a &quot;" newline="True"/>
+            <input variable="a"/>
+            <comment text="taking input for numerator &#13;&#10;"/>
+            <declare name="b" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the value of b&quot;" newline="True"/>
+            <input variable="b"/>
+            <comment text="Taking input for denominator "/>
+            <declare name="d" type="Integer" array="False" size=""/>
+            <assign variable="d" expression="a/b"/>
+            <comment text="D is the quotent of the division "/>
+            <declare name="m" type="Integer" array="False" size=""/>
+            <assign variable="m" expression="a-(b*d)"/>
+            <output expression="&quot;Reminder oif the division is&quot;" newline="True"/>
+            <output expression="m" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

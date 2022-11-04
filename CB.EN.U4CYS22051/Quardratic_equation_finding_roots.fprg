@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22051"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 11:03:41 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA1MTsyMDIyMjNNQVlDMDA4ODsyMDIyLTExLTA0OzA5OjI4OjU0IEFNOzMwNzI="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA1MTsyMDIyMjNNQVlDMDA4ODsyMDIyLTExLTA0OzExOjAzOjQxIEFNOzg7MzE2OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="PROGRAM TO FIND THE ROOTS OF QUARD EQUATION"/>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <comment text="Declaring the variable a &#13;&#10;"/>
+            <output expression="&quot;enter the value of coff of x^2&quot;" newline="True"/>
+            <input variable="a"/>
+            <declare name="b" type="Integer" array="False" size=""/>
+            <comment text="Declaring the variable b"/>
+            <output expression="&quot;enter the value of coff of x&quot;" newline="True"/>
+            <input variable="b"/>
+            <declare name="c" type="Integer" array="False" size=""/>
+            <comment text="Declaring the variable c"/>
+            <output expression="&quot;enter the value of c&quot;" newline="True"/>
+            <input variable="c"/>
+            <declare name="Root1" type="Integer" array="False" size=""/>
+            <assign variable="Root1" expression="(-b+(b^2-(4*a*c))^0.5)/(2*a)"/>
+            <comment text="using the formula to find first root "/>
+            <declare name="Root2" type="Integer" array="False" size=""/>
+            <assign variable="Root2" expression="(-b-(b^2-(4*a*c))^0.5)/(2*a)"/>
+            <comment text="using the formulaq to fiund the second root "/>
+            <output expression="&quot;The roots are&quot;" newline="True"/>
+            <output expression="&quot;Root1=&quot;" newline="True"/>
+            <comment text="Printing root 1 "/>
+            <output expression="Root1" newline="True"/>
+            <output expression="&quot;Root2=&quot;" newline="True"/>
+            <comment text="Printing the root 2 &#13;&#10;"/>
+            <output expression="Root2" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
