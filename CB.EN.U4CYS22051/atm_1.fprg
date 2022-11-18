@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22051"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-18 10:30:17 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjA1MTsyMDIyMjNNQVlDMDA4ODsyMDIyLTExLTE4OzA4OjU4OjU4IEFNOzMzMzk="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjA1MTsyMDIyMjNNQVlDMDA4ODsyMDIyLTExLTE4OzEwOjMwOjE3IEFNOzI7MzQyNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="accno" type="String" array="False" size=""/>
+            <declare name="pin" type="Integer" array="False" size=""/>
+            <declare name="balance" type="Integer" array="False" size=""/>
+            <declare name="minbal" type="Integer" array="False" size=""/>
+            <declare name="amount" type="Integer" array="False" size=""/>
+            <declare name="pinno" type="Integer" array="False" size=""/>
+            <declare name="balance2" type="Integer" array="False" size=""/>
+            <declare name="ans" type="String" array="False" size=""/>
+            <output expression="&quot;Enter your account number&quot;" newline="True"/>
+            <input variable="accno"/>
+            <output expression="&quot;Enter your pin no&quot;" newline="True"/>
+            <input variable="pin"/>
+            <output expression="&quot;Enter your bank balance&quot;" newline="True"/>
+            <input variable="balance"/>
+            <assign variable="minbal" expression="500"/>
+            <comment text="we are using if condition to check if the balance in the account is more thanm the minimum balance to withdraw money"/>
+            <output expression="&quot;enter the amounbt you wan tto withdraw&quot;" newline="True"/>
+            <input variable="amount"/>
+            <if expression="(balance-amount)&lt;minbal">
+                <then>
+                    <output expression="&quot;if the transcation is processed then your balance will become less than the min balnce. Do you want to continue?(y/n)&quot;" newline="True"/>
+                    <input variable="ans"/>
+                    <if expression="ans=&quot;y&quot;">
+                        <then>
+                            <output expression="&quot;Enter your pin number to proceeed with the transcation&quot;" newline="True"/>
+                            <comment text="Checking if the pin number entered is correct &#13;&#10;"/>
+                            <input variable="pinno"/>
+                            <if expression="pinno=pin">
+                                <then>
+                                    <output expression="&quot;your transation is being processed. please wait..&quot;" newline="True"/>
+                                    <output expression="&quot;Transaction successfull&quot;" newline="True"/>
+                                    <output expression="&quot;your current bank balance&quot;" newline="True"/>
+                                    <assign variable="balance2" expression="balance-amount"/>
+                                    <output expression="balance2" newline="True"/>
+                                    <output expression="&quot;Thank you for choosing our bank.Have a nice day&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Transaction Failed. Please enter the correct pin number&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else/>
+                    </if>
+                </then>
+                <else>
+                    <input variable="pinno"/>
+                    <if expression="pinno=pin">
+                        <then>
+                            <output expression="&quot;your transation is being processed. please wait..&quot;" newline="True"/>
+                            <output expression="&quot;Transaction successfull&quot;" newline="True"/>
+                            <output expression="&quot;your current bank balance&quot;" newline="True"/>
+                            <assign variable="balance2" expression="balance-amount"/>
+                            <output expression="balance2" newline="True"/>
+                            <output expression="&quot;Thank you for choosing our bank.Have a nice day&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Transaction Failed. Please enter the correct pin number&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

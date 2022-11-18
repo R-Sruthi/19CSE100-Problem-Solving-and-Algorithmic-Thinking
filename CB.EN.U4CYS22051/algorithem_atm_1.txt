@@ -1,0 +1,29 @@
+1.Start
+2.Declare the variables accno,pin,balance,minbal,amount,pinno,balance2
+3.Assign minbal=500
+4.Input the variables accno,pin,balance
+5.Iput the amount for withdrawel
+6.If (balance-amount)<minbal,
+	print" trancation is proceded then the balnce will go below minbal. do you want to continue?"
+		if ans="y",
+			input the pinnoumber
+				If pinno=pin,
+					print"transaction succesfull"
+					assign balnce2=balance-amount
+					print"balance2"
+					print"thank you for choosing our bank. have a nice day"
+
+		else,
+			end
+				else,
+					print"transaction failed, please enter the correct pin number"
+				end
+	else,
+		input the pinnoumber
+				If pinno=pin,
+					print"transaction succesfull"
+					assign balnce2=balance-amount
+					print"balance2"
+					print"thank you for choosing our bank. have a nice day"
+
+
