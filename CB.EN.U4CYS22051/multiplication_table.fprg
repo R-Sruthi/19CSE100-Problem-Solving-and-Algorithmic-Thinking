@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22051"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 10:31:26 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA1MTsyMDIyMjNNQVlDMDA4ODsyMDIyLTEyLTAyOzA5OjI4OjI2IEFNOzMwNzA="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA1MTsyMDIyMjNNQVlDMDA4ODsyMDIyLTEyLTAyOzEwOjMxOjI2IEFNOzM7MzE2Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="j" type="Integer" array="False" size=""/>
+            <assign variable="j" expression="1"/>
+            <declare name="m" type="Integer" array="False" size=""/>
+            <assign variable="m" expression="10"/>
+            <declare name="multi" type="Integer" array="False" size=""/>
+            <comment text="incrememting the outside loop for each table"/>
+            <while expression="j&lt;=m">
+                <output expression="&quot;The multiplication table of  &quot;" newline="False"/>
+                <output expression="j" newline="True"/>
+                <declare name="i" type="Integer" array="False" size=""/>
+                <assign variable="i" expression="1"/>
+                <while expression="i&lt;=m">
+                    <comment text="inner loop for each multiplication operation "/>
+                    <assign variable="multi" expression="j*i"/>
+                    <output expression="j" newline="False"/>
+                    <output expression="&quot;*&quot;" newline="False"/>
+                    <output expression="i" newline="False"/>
+                    <output expression="&quot;=&quot;" newline="False"/>
+                    <output expression="multi" newline="True"/>
+                    <assign variable="i" expression="i+1"/>
+                </while>
+                <assign variable="j" expression="j+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

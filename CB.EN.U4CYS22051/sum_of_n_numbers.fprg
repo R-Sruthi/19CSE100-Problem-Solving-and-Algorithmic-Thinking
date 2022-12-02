@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22051"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 09:24:56 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA1MTsyMDIyMjNNQVlDMDA4ODsyMDIyLTEyLTAyOzA4OjUyOjM5IEFNOzMwNzA="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA1MTsyMDIyMjNNQVlDMDA4ODsyMDIyLTEyLTAyOzA5OjI0OjU2IEFNOzQ7MzE4MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sum" type="Integer" array="False" size=""/>
+            <comment text="initialising sum to 0 "/>
+            <assign variable="sum" expression="0"/>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the value till which you want the sum of&quot;" newline="True"/>
+            <input variable="n"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <comment text="initialising i to 1 "/>
+            <assign variable="i" expression="1"/>
+            <while expression="i&lt;=n">
+                <assign variable="sum" expression="sum+i"/>
+                <comment text="incrememnting i by 1 for each iteratrion "/>
+                <assign variable="i" expression="i+1"/>
+            </while>
+            <output expression="&quot;sum of the n numbers is&quot;" newline="True"/>
+            <output expression="sum" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

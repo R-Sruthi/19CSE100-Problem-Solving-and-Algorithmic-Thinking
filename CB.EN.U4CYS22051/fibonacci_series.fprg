@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22051"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 10:28:12 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA1MTsyMDIyMjNNQVlDMDA4ODsyMDIyLTEyLTAyOzEwOjAzOjQ0IEFNOzMwNTU="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA1MTsyMDIyMjNNQVlDMDA4ODsyMDIyLTEyLTAyOzEwOjI4OjEyIEFNOzE7MzE2NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="limit" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the limit value&quot;" newline="True"/>
+            <input variable="limit"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="0"/>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <assign variable="n" expression="1"/>
+            <declare name="x" type="Integer" array="False" size=""/>
+            <declare name="counter" type="Integer" array="False" size=""/>
+            <comment text="counter counts the numbber of terms "/>
+            <assign variable="counter" expression="1"/>
+            <while expression="counter&lt;=limit">
+                <assign variable="x" expression="i+n"/>
+                <output expression="x" newline="True"/>
+                <comment text="updating the value of i in n"/>
+                <assign variable="i" expression="n"/>
+                <comment text="updating the value of n in x "/>
+                <assign variable="n" expression="x"/>
+                <comment text="incrementing the counter by 1 for each loop"/>
+                <assign variable="counter" expression="counter+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
