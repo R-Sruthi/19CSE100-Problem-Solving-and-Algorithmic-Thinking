@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22051"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-01-20 10:47:11 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA1MTsyMDIyMjNNQVlDMDA4ODsyMDIzLTAxLTIwOzA5OjEwOjA1IEFNOzMwNTc="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA1MTsyMDIyMjNNQVlDMDA4ODsyMDIzLTAxLTIwOzEwOjQ3OjExIEFNOzM7MzE2Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="min" type="Integer" array="False" size=""/>
+            <declare name="n, c" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter the number of elememnts in the array&quot;" newline="True"/>
+            <input variable="n"/>
+            <declare name="array" type="Integer" array="True" size="n"/>
+            <declare name="i, index, j" type="Integer" array="False" size=""/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <output expression="&quot;enter the number&quot;" newline="True"/>
+                <input variable="array[i]"/>
+            </for>
+            <for variable="index" start="0" end="n-1" direction="inc" step="1">
+                <assign variable="min" expression="array[index]"/>
+                <declare name="p" type="Integer" array="False" size=""/>
+                <assign variable="p" expression="index"/>
+                <for variable="j" start="index" end="n-1" direction="inc" step="1">
+                    <if expression="min&gt;array[j]">
+                        <then>
+                            <assign variable="min" expression="array[j]"/>
+                            <output expression="min" newline="True"/>
+                            <assign variable="p" expression="j"/>
+                            <output expression="p" newline="True"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+                <assign variable="c" expression="array[index]"/>
+                <assign variable="array[index]" expression="min"/>
+                <assign variable="min" expression="c"/>
+                <assign variable="array[p]" expression="min"/>
+            </for>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <output expression="array[i]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
