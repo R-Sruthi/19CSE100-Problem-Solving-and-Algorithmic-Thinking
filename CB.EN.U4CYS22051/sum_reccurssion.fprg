@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="S.RAMESH"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-01-27 10:24:05 PM"/>
+        <attribute name="created" value="Uy5SQU1FU0g7REVTS1RPUC1ISlBPMTBLOzIwMjMtMDEtMjc7MTA6MDc6MDMgUE07MjkwOQ=="/>
+        <attribute name="edited" value="Uy5SQU1FU0g7REVTS1RPUC1ISlBPMTBLOzIwMjMtMDEtMjc7MTA6MjQ6MDUgUE07MjszMDE5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sum" type="Integer" array="False" size=""/>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter the no of numbers to be added&quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="sum" expression="SUM(n)"/>
+            <output expression="sum" newline="True"/>
+        </body>
+    </function>
+    <function name="sum" type="Integer" variable="sum">
+        <parameters>
+            <parameter name="n" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="sum" type="Integer" array="False" size=""/>
+            <if expression="n==1">
+                <then>
+                    <assign variable="sum" expression="1"/>
+                </then>
+                <else>
+                    <assign variable="sum" expression="n*(n+1)/2"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
